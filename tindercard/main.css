@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(-134deg, #2211BE 0%, #1B0753 100%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#box {
+    background-color: white;
+    height: 426px;
+    width: 300px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px; 
+    -moz-box-shadow: 0px 10px 20px 0px #00000086;
+    -webkit-box-shadow: 0px 10px 20px 0px #00000086;
+    box-shadow: 0px 10px 20px 0px #00000086;
+}
+
+img {
+    max-width: 100%;
+    max-height:100%;
+    border-radius: 23px;
+}
+
+.name {
+    bottom: 70px;
+    left: 16px;
+    position: absolute;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list {
+    bottom: 0px;
+    left: -6px;
+    position: absolute;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+i {
+    color: white;
+    padding-top: 20px;
+    margin-left: 35px;
+}
+
+.fa-star:hover {
+    color: yellow;
+    transition-timing-function: ease-in;
+    
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.fa-ban:hover {
+    color: red;
+}
+

@@ -11,7 +11,6 @@
 <body>
     <?php
         echo "Hello, World";
-        
     ?>
 
     <div></div>
