@@ -14,7 +14,7 @@ $body .= 'Email: ' . $email . "\n";
 $body .= 'Message: ' . $message . "\n";
 
 if( mail($to, $subject, $body) ) {
-    header("Location: localhost:3000/contact-form/thanks.php");
+    header("Location: ../contact-form/thanks.php");
 } else {
     echo "There was a problem sending this message";
 }
