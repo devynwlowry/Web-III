@@ -1,15 +1,13 @@
 <?php 
+    
+    $tweets=['twitter'];
 
-    session_start();
-
-    // $tweets=[];
-
-    // if($_POST['twitter']) {
-    //     array_push($tweets, $_POST['twitter']);
-    //     $json = json_encode($tweets);
-    //     file_get_contents('tweets.json');
-    //     file_put_contents('tweets.json', $json);
-    // }
+    if($_POST['twitter']) {
+        array_push($tweets, $_POST['twitter'], 'twitter');
+        $json = json_encode($tweets);
+        file_get_contents('tweets.json');
+        file_put_contents('tweets.json', $json);
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,4 +50,3 @@
     </div>
 </body>
 </html>
-<?php session_destroy();?>
