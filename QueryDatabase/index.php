@@ -18,6 +18,12 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <form>
+        <input type="text" class="search" placeholder="search"></input>
+        <input type="submit" class="searchButton"></input>
+    </form>
+    
+
     
 </body>
 </html>
