@@ -1,0 +1,15 @@
+{
+    "name": "devynlowry/composer",
+    "description": "Assignment 1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Devyn Lowry",
+            "email": "devyn.lowry@uconn.edu"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.16",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

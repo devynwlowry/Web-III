@@ -1,5 +1,19 @@
 <?php 
 
+$PDO = new PDO('mysql:host=localhost:3306;dbname=employee_db', 'root', 'password');
+
+$q = trim($_GET['q']);
+
+if($q !=null) {
+    $statement = $PDO->prepare("SELECT * FROM employees WHERE name LIKE ':q'");
+    $statement->execute(['q' => $q]);
+    while($row = $statement->fetch()) {
+        echo "" . $row-> .'(' .$row-> );
+    }
+}
+
+
+
 
 
 
@@ -19,7 +33,7 @@
 </head>
 <body>
     <form>
-        <input type="text" class="search" placeholder="search"></input>
+        <input type="text" name="search" placeholder="search" method="get"></input>
         <input type="submit" class="searchButton"></input>
     </form>
     
