@@ -10,6 +10,7 @@ return array(
     'Symfony\\Contracts\\' => array($vendorDir . '/symfony/contracts'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
+    'Location\\' => array($vendorDir . '/mjaschen/phpgeo/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),

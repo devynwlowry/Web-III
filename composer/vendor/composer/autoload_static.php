@@ -25,6 +25,10 @@ class ComposerStaticInit4bfe057d55543d55ff234fd2afc7bc8f
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
+        'L' => 
+        array (
+            'Location\\' => 9,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -53,6 +57,10 @@ class ComposerStaticInit4bfe057d55543d55ff234fd2afc7bc8f
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Location\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mjaschen/phpgeo/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

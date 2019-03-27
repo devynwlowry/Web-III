@@ -9,7 +9,6 @@
         }
     ],
     "require": {
-        "nesbot/carbon": "^2.16",
-        "guzzlehttp/guzzle": "^6.3"
+        "mjaschen/phpgeo": "^2.1"
     }
 }
