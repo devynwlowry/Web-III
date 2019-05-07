@@ -1,13 +1,19 @@
 <?php 
-    
-    $tweets=['twitter'];
+    session_start();
+    $fd = file_get_contents('tweets.json');
+    $tweets = json_decode($fd, true);
+    if (is_null($tweets)) {
+        $tweets = array();
+    }
 
     if($_POST['twitter']) {
-        array_push($tweets, $_POST['twitter'], 'twitter');
+        
+        array_push($tweets, trim($_POST['twitter']));
         $json = json_encode($tweets);
-        file_get_contents('tweets.json');
-        file_put_contents('tweets.json', $json);
+        file_put_contents('tweets.json', $json);    
     }
+    unset($_POST['twitter']);
+    $_SESSION['tweets'] = $tweets;
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,13 +44,15 @@
                     <textarea name="twitter" placeholder="New Tweet"></textarea>
                     <button type="submit" name="tweet" class="tweet"><b>Tweet</b></button>
                 </form>
+                <ul style='text-align:center; margin-top:-400px;=; font-family:Helvetica Neue;font-weight:500;font-size: 22px; list-style: none; height: 25vh; overflow-y: scroll;'>
             <?php
-                $_SESSION['tweets'] = $_POST['twitter'];
-
-                if(isset($_POST['twitter'])){
-                echo ("<ul style='text-align:center; margin-top:-400px;=; font-family:Helvetica Neue;font-weight:500;font-size: 22px;'>" . $_POST['twitter'] . "</ul>");
+                $i = count($tweets);
+                while($i >= 0) {
+                    echo ("<li>" . $_SESSION['tweets'][$i-1] . "</li>");
+                    $i--;
                 }
             ?>
+            </ul>
             </div>
         </div>
     </div>
